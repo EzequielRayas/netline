@@ -1,0 +1,48 @@
+<p>eliminar-cli works!</p>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <th class="bg-primary">#</th>
+              <td >{{ cliente.id }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Nombre</th>
+              <td>{{ cliente.nombre }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Tipo</th>
+              <td >{{ cliente.tipo }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Dirección</th>
+              <td >{{ cliente.direccion }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">RFC</th>
+              <td >{{ cliente.rfc }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Responsable</th>
+              <td >{{ cliente.responsable.nombre }} {{ cliente.responsable.apellido }}<br>{{ cliente.responsable.telefono }}<br>{{ cliente.responsable.correo }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Horario</th>
+              <td >{{ cliente.horario.inicio }} - {{ cliente.horario.fin }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Imagen</th>
+              <td ><img [src]="cliente.imagen" alt="Imagen de cliente"></td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Estatus</th>
+              <td >{{ cliente.estatus }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

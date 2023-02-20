@@ -1,0 +1,138 @@
+<div class="container">
+
+  <div
+      class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Productos</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+              Agregar
+          </button>
+      </div>
+
+
+
+
+      <button class="btn btn-secondary" (click)="consultarTodoProd()">Consultar</button>
+
+
+  </div>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">Agregar Producto</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="alert alert-info alert-dismissible"  style="margin: 1em;">
+                      <button type="button" class="close" data-dismiss="alert">&times;</button>
+                      <strong></strong>
+                  </div>
+                  <div>
+                      <form class="needs-validation" novalidate>
+
+                          <div class="form-row">
+                            <label for="id">ID:</label>
+                            <input type="number" class="form-control" id="id" name="id" [(ngModel)]="producto.id" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="producto.nombre" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="noParte">No. de Parte:</label>
+                            <input type="number" class="form-control" id="noParte" name="noParte" [(ngModel)]="producto.noParte" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="idProveedores">ID de Proveedores:</label>
+                            <input type="number" class="form-control" id="idProveedores" name="idProveedores" [(ngModel)]="producto.idProveedores" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="tipo">Tipo:</label>
+                            <input type="text" class="form-control" id="tipo" name="tipo" [(ngModel)]="producto.tipo" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="categoria">Categoría:</label>
+                            <input type="text" class="form-control" id="categoria" name="categoria" [(ngModel)]="producto.categoria" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="descripcion">Descripción:</label>
+                            <textarea class="form-control" id="descripcion" name="descripcion" [(ngModel)]="producto.descripcion" required></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="unidad">Unidad:</label>
+                            <input type="text" class="form-control" id="unidad" name="unidad" [(ngModel)]="producto.unidad" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="precio">Precio:</label>
+                            <input type="decimal" class="form-control" id="precio" name="precio" [(ngModel)]="producto.precio" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="existencia">Existencia:</label>
+                            <input type="number" class="form-control" id="existencia" name="existencia" [(ngModel)]="producto.existencia" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="imagen">Imagen:</label>
+                            <input type="text" class="form-control" id="imagen" name="imagen" [(ngModel)]="producto.imagen" required>
+                          </div>
+
+                          <button class="btn btn-primary" (click)="guardarProd()">Guardar</button>
+                          <button class="btn btn-primary" (click)="modificarProd()">Modificar</button>
+                          <button class="btn btn-primary" (click)="eliminarProd()">Eliminar</button>
+                          <button class="btn btn-primary" (click)="consultarProd()">Buscar</button>
+                      </form>
+
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <hr>
+
+  <div>
+      <table class="table">
+          <thead class="thead-dark">
+              <tr>
+                  <th class="bg-primary">#</th>
+                  <th class="bg-primary">Nombre</th>
+                  <th class="bg-primary">No. de Parte</th>
+                  <th class="bg-primary">Proveedor</th>
+                  <th class="bg-primary"> Tipo</th>
+                  <th class="bg-primary">Categoría</th>
+                  <th class="bg-primary">Descripción</th>
+                  <th class="bg-primary">Unidad</th>
+                  <th class="bg-primary">Precio</th>
+                  <th class="bg-primary">Existencia</th>
+                  <th class="bg-primary">Imagen</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let producto of productos">
+              <td>{{ producto.id }}</td>
+              <td>{{ producto.nombre }}</td>
+              <td>{{ producto.noParte }}</td>
+              <td>{{ producto.idProveedores }}</td>
+              <td>{{ producto.tipo }}</td>
+              <td>{{ producto.categoria }}</td>
+              <td>{{ producto.descripcion }}</td>
+              <td>{{ producto.unidad }}</td>
+              <td>{{ producto.precio }}</td>
+              <td>{{ producto.existencia }}</td>
+              <td><img [src]="producto.imagen" alt="Imagen del producto" width="50" height="50"></td>
+
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
+
+

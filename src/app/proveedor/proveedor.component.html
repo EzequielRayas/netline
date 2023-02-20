@@ -1,0 +1,143 @@
+<div class="container">
+
+  <div
+      class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Proveedor</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+              Agregar
+          </button>
+      </div>
+
+
+
+
+      <button class="btn btn-secondary" (click)="consultarTodoPro()">Consultar</button>
+
+
+  </div>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">Agregar Proveedor</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="alert alert-info alert-dismissible"  style="margin: 1em;">
+                      <button type="button" class="close" data-dismiss="alert">&times;</button>
+                      <strong></strong>
+                  </div>
+                  <div>
+                      <form class="needs-validation" novalidate>
+
+                          <div class="form-row">
+                              <div class="col-md-3 mb-3">
+                                  <label for="validationCustom05">id</label>
+                                  <input type="number" class="form-control" name="id" id="validationCustom05"
+                                      ngDefaultControl [(ngModel)]="proveedor.id">
+                                  <div class="valid-feedback">
+                                      Correcto!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                      Por favor ingresa un dato valido.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-md-6 mb-3">
+                                  <label for="validationCustom01">Nombre</label>
+                                  <input type="text" class="form-control" name="nombre" id="validationCustom01"
+                                      ngDefaultControl [(ngModel)]="proveedor.nombre">
+                                  <div class="valid-feedback">
+                                      Correcto!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                      Por favor ingresa un dato valido.
+                                  </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                  <label for="validationCustom02">Direccion</label>
+                                  <input type="text" class="form-control" name="apellido" id="validationCustom02"
+                                      ngDefaultControl [(ngModel)]="proveedor.direccion">
+                                  <div class="valid-feedback">
+                                      Correcto!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                      Por favor ingresa un dato valido.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col-md-6 mb-3">
+                                  <label for="validationCustom03">Telefono</label>
+                                  <input type="number" class="form-control" name="telefono" id="validationCustom03"
+                                      ngDefaultControl [(ngModel)]="proveedor.telefono">
+                                  <div class="valid-feedback">
+                                      Correcto!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                      Por favor ingresa un dato valido.
+                                  </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                  <label for="validationCustom05">Correo</label>
+                                  <input type="email" class="form-control" name="correo" id="validationCustom05"
+                                      ngDefaultControl [(ngModel)]="proveedor.correo">
+                                  <div class="valid-feedback">
+                                      Correcto!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                      Por favor ingresa un dato valido.
+                                  </div>
+                              </div>
+                          </div>
+
+                          <button class="btn btn-primary" (click)="guardarPro()">Guardar</button>
+                          <button class="btn btn-primary" (click)="modificarPro()">Modificar</button>
+                          <button class="btn btn-primary" (click)="eliminarPro()">Eliminar</button>
+                          <button class="btn btn-primary" (click)="consultarPro()">Buscar</button>
+                      </form>
+
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <hr>
+
+  <div>
+      <table class="table">
+          <thead class="thead-dark">
+              <tr>
+                  <th class="bg-primary">#</th>
+                  <th class="bg-primary">Nombre</th>
+                  <th class="bg-primary">Dirección</th>
+                  <th class="bg-primary">Teléfono</th>
+                  <th class="bg-primary">Correo</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr scope="row" *ngFor="let pro of proveedores">
+                <td scope="row">{{pro.id}}</td>
+                <td>{{pro.nombre}}</td>
+                <td>{{pro.direccion}}</td>
+                <td>{{pro.telefono}}</td>
+                <td>{{pro.correo}}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
+
+
+
