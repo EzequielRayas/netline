@@ -1,7 +1,8 @@
- 
-
- th {
-    color: white;
-  }
-
+table {
+  width: auto;
+}
+th {
+  width: 120px;
+  color: white;
+}
   
