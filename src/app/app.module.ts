@@ -27,6 +27,12 @@ import { VentasComponent } from './ventas/ventas.component';
 import { AlmacenComponent } from './almacen/almacen.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { EliminarCliComponent } from './cliente/eliminar-cli/eliminar-cli.component';
+import { EliminarEmpComponent } from './empleado/eliminar-emp/eliminar-emp.component';
+import { EliminarCotComponent } from './cotizacion/eliminar-cot/eliminar-cot.component';
+import { EliminarDimComponent } from './dimensionamiento/eliminar-dim/eliminar-dim.component';
+import { EliminarOrdComponent } from './orden-servicio/eliminar-ord/eliminar-ord.component';
+import { EliminarProdComponent } from './producto-servicio/eliminar-prod/eliminar-prod.component';
+import { EliminarProvComponent } from './proveedor/eliminar-prov/eliminar-prov.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +53,13 @@ import { EliminarCliComponent } from './cliente/eliminar-cli/eliminar-cli.compon
     VentasComponent,
     AlmacenComponent,
     ServiciosComponent,
-    EliminarCliComponent
+    EliminarCliComponent,
+    EliminarEmpComponent,
+    EliminarCotComponent,
+    EliminarDimComponent,
+    EliminarOrdComponent,
+    EliminarProdComponent,
+    EliminarProvComponent
   ],
   imports: [
     BrowserModule,

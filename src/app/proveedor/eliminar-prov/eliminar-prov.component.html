@@ -1,0 +1,34 @@
+<p>eliminar-prov works!</p>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped table-condensed" style="width: auto;">
+          <tbody>
+            <tr>
+              <th class="bg-primary" style="text-align: center; color: white" colspan="4">Proveedor</th>
+            </tr>
+            <tr>
+              <th class="bg-primary" style="color: white">ID</th>
+              <td >{{ proveedor.id }}</td>
+              <th class="bg-primary" style="color: white">Nombre</th>
+              <td>{{ proveedor.nombre }}</td>
+            </tr>
+  
+            <tr>
+               <th class="bg-primary" style="color: white">Telefono</th>
+              <td >{{ proveedor.telefono }}</td>
+              <th class="bg-primary" style="color: white">Correo</th>
+              <td >{{ proveedor.correo }}</td>
+            </tr>
+  
+            <tr>
+                <th class="bg-primary" style="color: white">Direccion</th>
+                <td colspan="3">{{ proveedor.direccion }}</td>
+            </tr>
+  
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

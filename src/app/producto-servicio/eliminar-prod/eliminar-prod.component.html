@@ -1,0 +1,53 @@
+<p>eliminar-prod works!</p>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped table-condensed" style="width: auto;">
+          <tbody>
+            <tr>
+              <th class="bg-primary" style="text-align: center; color: white" colspan="4">Cliente</th>
+            </tr>
+            <tr>
+              <th class="bg-primary" style="color: white">ID</th>
+              <td >{{ producto.id }}</td>
+              <th class="bg-primary" style="color: white">Nombre</th>
+              <td>{{ producto.nombre }}</td>
+            </tr>
+  
+            <tr>
+               <th class="bg-primary" style="color: white">No.Parte</th>
+              <td >{{ producto.noParte }}</td>
+              <th class="bg-primary" style="color: white">ID Proveedores</th>
+              <td >{{ producto.idProveedores }}</td>
+            </tr>
+  
+            <tr>
+                <th class="bg-primary" style="color: white">Tipo</th>
+                <td >{{ producto.tipo }}</td>
+              <th class="bg-primary" style="color: white">Categoría</th>
+              <td >{{ producto.categoria }}</td>
+            </tr>
+            <tr>
+                <th class="bg-primary" style="color: white">Unidad</th>
+                <td >{{ producto.unidad }}</td>
+                <th class="bg-primary" style="color: white">Precio</th>
+                <td >{{ producto.precio }}</td>
+            </tr>
+            <tr>
+                <th class="bg-primary" style="color: white">Existencia</th>
+                <td >{{ producto.existencia }}</td>
+                <th class="bg-primary" style="color: white">Imagen</th>
+                <td ><img [src]="producto.imagen" alt="Imagen de producto"></td>
+            </tr>
+  
+            <tr>
+              <th class="bg-primary" style="color: white">Descripción</th>
+              <td colspan="3">{{ producto.descripcion }}</td>
+            </tr>
+  
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

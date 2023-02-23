@@ -19,18 +19,28 @@ import { ServiciosComponent } from './servicios/servicios.component';
 
 //eliminar
 import { EliminarCliComponent } from './cliente/eliminar-cli/eliminar-cli.component';
-
+import { EliminarEmpComponent } from './empleado/eliminar-emp/eliminar-emp.component';
+import { EliminarCotComponent } from './cotizacion/eliminar-cot/eliminar-cot.component';
+import { EliminarDimComponent } from './dimensionamiento/eliminar-dim/eliminar-dim.component';
+import { EliminarOrdComponent } from './orden-servicio/eliminar-ord/eliminar-ord.component';
+import { EliminarProdComponent } from './producto-servicio/eliminar-prod/eliminar-prod.component';
+import { EliminarProvComponent } from './proveedor/eliminar-prov/eliminar-prov.component';
 
 const routes: Routes = [
 
-  //prueba eliminar
+  //pruebas rutas eliminar
   {path:"eliminar-cliente",component:EliminarCliComponent},
+  {path:"eliminar-empleado",component:EliminarEmpComponent},
+  {path:"eliminar-cotizacion",component:EliminarCotComponent},
+  {path:"eliminar-dimensionamiento",component:EliminarDimComponent},
+  {path:"eliminar-orden",component:EliminarOrdComponent},
+  {path:"eliminar-producto",component:EliminarProdComponent},
+  {path:"eliminar-proveedor",component:EliminarProvComponent},
 
+
+  //rutas generales
   {path:"inicio",component:InicioComponent},
   {path:"usuario",component:UsuarioComponent},
-
-
-
 
   {
     path: "admin", component: AdministradorComponent,

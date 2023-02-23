@@ -1,0 +1,126 @@
+<p>eliminar-dim works!</p>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped table-condensed" style=" width: auto; " >
+          <tbody>
+            <tr>
+                <th class="bg-primary" style="text-align: center;" colspan="4">Dimensionamiento</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">ID</th>
+              <td >{{dimen.id}}</td>
+              <th class="bg-primary">Nombre</th>
+              <td>{{ dimen.nombre }}</td>
+            </tr>
+  
+            <tr>
+                <th class="bg-primary" style="text-align: center;" colspan="4">Cliente</th>
+                
+              </tr>
+              <tr>
+                <th class="bg-primary">Empresa</th>
+                <td>{{ dimen.cliente.empresa }}</td>
+                <th class="bg-primary">Nombre</th>
+                <td >{{ dimen.cliente.nombre }}</td>
+              </tr>
+            <tr>
+              <th class="bg-primary">Telefono</th>
+              <td >{{ dimen.cliente.nombre }}</td>
+              <th class="bg-primary">Correo</th>
+              <td >{{ dimen.cliente.correo }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Direccion</th>
+              <td colspan="4">{{ dimen.cliente.direccion }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="4">Empleado</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Recibe</th>
+              <td >{{ dimen.empleado.recibe }}</td>
+              <th class="bg-primary">Participa</th>
+              <td >{{ dimen.empleado.participa }}</td>
+            </tr>
+  
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="4">Fecha</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Recepcion</th>
+              <td >{{ dimen.fecha.recepcion }}</td>
+              <th class="bg-primary">Atencion</th>
+              <td >{{ dimen.fecha.atencion }}</td>
+            </tr>
+            <tr>
+                <th class="bg-primary">Hora</th>
+                <td >{{ dimen.hora }}</td>
+                <th class="bg-primary">Reporte</th>
+                <td >{{ dimen.reporte }}</td>
+              </tr>
+              <tr>
+                <th class="bg-primary">Descripción</th>
+                <td colspan="4">{{ dimen.descripcion }}</td>
+              </tr>
+  
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="4">Servicios</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Nombre</th>
+              <td >{{ dimen.servicios.nombre }}</td>
+              <th class="bg-primary">Categoría</th>
+              <td >{{ dimen.servicios.categoria }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Descripción</th>
+              <td colspan="4">{{ dimen.servicios.descripcion }}</td>
+            </tr>
+  
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="4">Material</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Nombre</th>
+              <td >{{ dimen.material.nombre }}</td>
+              <th class="bg-primary">No.Parte</th>
+              <td >{{ dimen.material.noParte }}</td>
+            </tr>
+            <tr>
+                <th class="bg-primary">Unidad</th>
+                <td >{{ dimen.material.unidad }}</td>
+                <th class="bg-primary">Cantidad</th>
+                <td >{{ dimen.material.cantidad }}</td>
+              </tr>
+              <tr>
+                <th class="bg-primary">Descripción</th>
+                <td colspan="3">{{ dimen.material.descripcion }}</td>
+              </tr>
+
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="4">Detalles</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Dias</th>
+              <td >{{ dimen.dias }}</td>
+              <th class="bg-primary">Horario</th>
+              <td >{{ dimen.horario }}</td>
+            </tr>
+            <tr>
+                <th class="bg-primary">Peronal</th>
+                <td >{{ dimen.peronal }}</td>
+              <th class="bg-primary">Estatus</th>
+              <td >{{ dimen.estatus }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Notas</th>
+              <td colspan="3">{{ dimen.notas }}</td>
+            </tr>
+             
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

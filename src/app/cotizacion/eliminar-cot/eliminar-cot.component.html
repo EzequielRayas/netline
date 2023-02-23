@@ -1,0 +1,292 @@
+<p>eliminar-cot works!</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-striped table-condensed" style=" width: auto; " >
+        <tbody>
+                        <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="4">Cotización</th>
+              
+            </tr>
+          <tr>
+            <th class="bg-primary">ID</th>
+            <td >{{cotizacion.id}}</td>
+            <th class="bg-primary">Nombre</th>
+            <td>{{ cotizacion.nombre }}</td>
+          </tr>
+
+          <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="4">Cliente</th>
+              
+            </tr>
+            <tr>
+              <th class="bg-primary">Empresa</th>
+              <td>{{ cotizacion.cliente.empresa }}</td>
+              <th class="bg-primary">Nombre</th>
+              <td >{{ cotizacion.cliente.nombre }}</td>
+            </tr>
+          <tr>
+            <th class="bg-primary">Telefono</th>
+            <td >{{ cotizacion.cliente.nombre }}</td>
+            <th class="bg-primary">Correo</th>
+            <td >{{ cotizacion.cliente.correo }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary">Direccion</th>
+            <td colspan="4">{{ cotizacion.cliente.direccion }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="text-align: center;" colspan="4">Empleado</th>
+          </tr>
+          <tr>
+            <th class="bg-primary">Recibe</th>
+            <td >{{ cotizacion.empleado.recibe }}</td>
+            <th class="bg-primary">Participa</th>
+            <td >{{ cotizacion.empleado.participa }}</td>
+          </tr>
+
+          <tr>
+            <th class="bg-primary" style="text-align: center;" colspan="4">Fecha</th>
+          </tr>
+          <tr>
+            <th class="bg-primary">Recepcion</th>
+            <td >{{ cotizacion.fecha.recepcion }}</td>
+            <th class="bg-primary">Vigencia</th>
+            <td >{{ cotizacion.fecha.vigencia }}</td>
+          </tr>
+
+          <tr>
+            <th class="bg-primary" style="text-align: center;" colspan="4">Servicios</th>
+          </tr>
+          <tr>
+            <th class="bg-primary">Cantidad</th>
+            <td >{{ cotizacion.servicios.cantidad }}</td>
+            <th class="bg-primary">Imagen</th>
+            <td >{{ cotizacion.servicios.imagen }}</td>
+          </tr>
+
+          <tr>
+            <th class="bg-primary">Precio</th>
+            <td >{{ cotizacion.servicios.precio }}</td>
+            <th class="bg-primary">Subtotal</th>
+            <td >{{ cotizacion.servicios.subtotal }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary">Descripcion</th>
+            <td colspan="4">{{ cotizacion.servicios.descripcion }}</td>
+          </tr>
+
+          <tr>
+            <th class="bg-primary" style="text-align: center;" colspan="4">Productos</th>
+          </tr>
+          <tr>
+            <th class="bg-primary">Cantidad</th>
+            <td >{{ cotizacion.productos.cantidad }}</td>
+            <th class="bg-primary">Garantia</th>
+            <td >{{ cotizacion.productos.garantia }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary">Entrega</th>
+            <td >{{ cotizacion.productos.entrega }}</td>
+            <th class="bg-primary">Imagen</th>
+            <td >{{ cotizacion.productos.imagen }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary">Descripcion</th>
+            <td >{{ cotizacion.productos.descripcion }}</td>
+            <th class="bg-primary">Precio</th>
+            <td >{{ cotizacion.productos.precio }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary">Utilidad</th>
+            <td >{{ cotizacion.productos.utilidad }}</td>
+            <th class="bg-primary">Importe</th>
+            <td >{{ cotizacion.productos.importe }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary">Subtotal</th>
+            <td >{{ cotizacion.productos.subtotal }}</td>
+            <th class="bg-primary">Proveedor</th>
+            <td >{{ cotizacion.productos.proveedor }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="text-align: center;" colspan="4">Detalles</th>
+          </tr>
+          <tr>
+            <th class="bg-primary">Pago</th>
+            <td >{{ cotizacion.pago }}</td>
+            <th class="bg-primary">Total</th>
+            <td >{{ cotizacion.total }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary">Estatus</th>
+            <td colspan="3">{{ cotizacion.estatus }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary">Notas</th>
+            <td colspan="3">{{ cotizacion.notas }}</td>
+          </tr>
+           
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped table-condensed" style="width: auto;">
+          <tbody>
+                          <tr>
+                <th class="bg-primary" style="text-align: center;" colspan="2">Cotización</th>
+                
+              </tr>
+            <tr>
+              <th class="bg-primary">ID</th>
+              <td >{{cotizacion.id}}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Nombre</th>
+              <td>{{ cotizacion.nombre }}</td>
+            </tr>
+            <tr>
+                <th class="bg-primary" style="text-align: center;" colspan="2">Cliente</th>
+                
+              </tr>
+              <tr>
+                <th class="bg-primary">Empresa</th>
+                <td>{{ cotizacion.cliente.empresa }}</td>
+              </tr>
+            <tr>
+              <th class="bg-primary">Nombre</th>
+              <td >{{ cotizacion.cliente.nombre }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Telefono</th>
+              <td >{{ cotizacion.cliente.nombre }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Correo</th>
+              <td >{{ cotizacion.cliente.correo }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Direccion</th>
+              <td >{{ cotizacion.cliente.direccion }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="2">Empleado</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Recibe</th>
+              <td >{{ cotizacion.empleado.recibe }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Participa</th>
+              <td >{{ cotizacion.empleado.participa }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="2">Fecha</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Recepcion</th>
+              <td >{{ cotizacion.fecha.recepcion }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Vigencia</th>
+              <td >{{ cotizacion.fecha.vigencia }}</td>
+            </tr>
+
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="2">Servicios</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Cantidad</th>
+              <td >{{ cotizacion.servicios.cantidad }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Imagen</th>
+              <td >{{ cotizacion.servicios.imagen }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Descripcion</th>
+              <td colspan="2">{{ cotizacion.servicios.descripcion }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Precio</th>
+              <td >{{ cotizacion.servicios.precio }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Subtotal</th>
+              <td >{{ cotizacion.servicios.subtotal }}</td>
+            </tr>
+
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="2">Productos</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Cantidad</th>
+              <td >{{ cotizacion.productos.cantidad }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Garantia</th>
+              <td >{{ cotizacion.productos.garantia }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Entrega</th>
+              <td >{{ cotizacion.productos.entrega }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Imagen</th>
+              <td >{{ cotizacion.productos.imagen }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Descripcion</th>
+              <td >{{ cotizacion.productos.descripcion }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Precio</th>
+              <td >{{ cotizacion.productos.precio }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Utilidad</th>
+              <td >{{ cotizacion.productos.utilidad }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Importe</th>
+              <td >{{ cotizacion.productos.importe }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Subtotal</th>
+              <td >{{ cotizacion.productos.subtotal }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Proveedor</th>
+              <td >{{ cotizacion.productos.proveedor }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="2">Detalles</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Pago</th>
+              <td >{{ cotizacion.pago }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Total</th>
+              <td >{{ cotizacion.total }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Estatus</th>
+              <td >{{ cotizacion.estatus }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Notas</th>
+              <td colspan="2">{{ cotizacion.notas }}</td>
+            </tr>
+             
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div> -->

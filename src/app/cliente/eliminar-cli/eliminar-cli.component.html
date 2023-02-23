@@ -1,48 +1,99 @@
 <p>eliminar-cli works!</p>
 
 <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <table class="table table-striped">
-          <tbody>
-            <tr>
-              <th class="bg-primary">#</th>
-              <td >{{ cliente.id }}</td>
-            </tr>
-            <tr>
-              <th class="bg-primary">Nombre</th>
-              <td>{{ cliente.nombre }}</td>
-            </tr>
-            <tr>
-              <th class="bg-primary">Tipo</th>
-              <td >{{ cliente.tipo }}</td>
-            </tr>
-            <tr>
-              <th class="bg-primary">Dirección</th>
-              <td >{{ cliente.direccion }}</td>
-            </tr>
-            <tr>
-              <th class="bg-primary">RFC</th>
-              <td >{{ cliente.rfc }}</td>
-            </tr>
-            <tr>
-              <th class="bg-primary">Responsable</th>
-              <td >{{ cliente.responsable.nombre }} {{ cliente.responsable.apellido }}<br>{{ cliente.responsable.telefono }}<br>{{ cliente.responsable.correo }}</td>
-            </tr>
-            <tr>
-              <th class="bg-primary">Horario</th>
-              <td >{{ cliente.horario.inicio }} - {{ cliente.horario.fin }}</td>
-            </tr>
-            <tr>
-              <th class="bg-primary">Imagen</th>
-              <td ><img [src]="cliente.imagen" alt="Imagen de cliente"></td>
-            </tr>
-            <tr>
-              <th class="bg-primary">Estatus</th>
-              <td >{{ cliente.estatus }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-striped table-condensed" style="width: auto;">
+        <tbody>
+          <tr>
+            <th class="bg-primary" style="text-align: center; color: white" colspan="4">Cliente</th>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="color: white">#</th>
+            <td >{{ cliente.id }}</td>
+            <th class="bg-primary" style="color: white">Nombre</th>
+            <td>{{ cliente.nombre }}</td>
+          </tr>
+
+          <tr>
+            <th class="bg-primary" style="color: white">Tipo</th>
+            <td >{{ cliente.tipo }}</td>
+             <th class="bg-primary" style="color: white">Dirección</th>
+            <td >{{ cliente.direccion }}</td>
+          </tr>
+
+          <tr>
+            <th class="bg-primary" style="color: white">RFC</th>
+            <td >{{ cliente.rfc }}</td>
+            <th class="bg-primary" style="color: white">Horario</th>
+            <td >{{ cliente.horario.inicio }} - {{ cliente.horario.fin }}</td>
+          </tr>
+
+          <tr>
+            <th class="bg-primary" style="color: white">Imagen</th>
+            <td ><img [src]="cliente.imagen" alt="Imagen de cliente"></td>
+            <th class="bg-primary" style="color: white">Estatus</th>
+            <td >{{ cliente.estatus }}</td>
+          </tr>
+           <tr >
+            <th class="bg-primary" style="color: white">Responsable</th>
+            <td colspan="3" >{{ cliente.responsable.nombre }} {{ cliente.responsable.apellido }}<br>{{ cliente.responsable.telefono }}<br>{{ cliente.responsable.correo }}</td>
+          </tr>
+
+        </tbody>
+      </table>
     </div>
   </div>
+</div>
+
+
+<!-- 
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-striped table-condensed" style="width: auto;">
+        <tbody>
+          <tr>
+            <th class="bg-primary" style="text-align: center; color: white" colspan="2">Cliente</th>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="color: white">#</th>
+            <td >{{ cliente.id }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="color: white">Nombre</th>
+            <td>{{ cliente.nombre }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="color: white">Tipo</th>
+            <td >{{ cliente.tipo }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="color: white">Dirección</th>
+            <td >{{ cliente.direccion }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="color: white">RFC</th>
+            <td >{{ cliente.rfc }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="color: white">Responsable</th>
+            <td >{{ cliente.responsable.nombre }} {{ cliente.responsable.apellido }}<br>{{ cliente.responsable.telefono }}<br>{{ cliente.responsable.correo }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="color: white">Horario</th>
+            <td >{{ cliente.horario.inicio }} - {{ cliente.horario.fin }}</td>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="color: white">Imagen</th>
+            <td ><img [src]="cliente.imagen" alt="Imagen de cliente"></td>
+          </tr>
+          <tr>
+            <th class="bg-primary" style="color: white">Estatus</th>
+            <td >{{ cliente.estatus }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div> -->

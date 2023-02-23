@@ -1,0 +1,109 @@
+<p>eliminar-ord works!</p>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped table-condensed" style=" width: auto; " >
+          <tbody>
+            <tr>
+                <th class="bg-primary" style="text-align: center;" colspan="4">Orden</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">ID</th>
+              <td colspan="3">{{orden.id}}</td>
+            </tr>
+  
+            <tr>
+                <th class="bg-primary" style="text-align: center;" colspan="4">Cliente</th>
+                
+              </tr>
+              <tr>
+                <th class="bg-primary">Empresa</th>
+                <td>{{ orden.cliente.empresa }}</td>
+                <th class="bg-primary">Nombre</th>
+                <td >{{ orden.cliente.nombre }}</td>
+              </tr>
+            <tr>
+              <th class="bg-primary">Telefono</th>
+              <td >{{ orden.cliente.nombre }}</td>
+              <th class="bg-primary">Correo</th>
+              <td >{{ orden.cliente.correo }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Direccion</th>
+              <td colspan="4">{{ orden.cliente.direccion }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="4">Empleado</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Recibe</th>
+              <td >{{ orden.empleado.recibe }}</td>
+              <th class="bg-primary">Participa</th>
+              <td >{{ orden.empleado.participa }}</td>
+            </tr>
+  
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="4">Fecha</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Recepcion</th>
+              <td >{{ orden.fecha.recepcion }}</td>
+              <th class="bg-primary">Atencion</th>
+              <td >{{ orden.fecha.atencion }}</td>
+            </tr>
+            <tr>
+                <th class="bg-primary" style="text-align: center;" colspan="4">Horario</th>
+              </tr>
+              <tr>
+                <th class="bg-primary">Inicio</th>
+                <td >{{ orden.horario.inicio }}</td>
+                <th class="bg-primary">Fin</th>
+                <td >{{ orden.horario.fin }}</td>
+              </tr>
+
+            <tr>
+                <th class="bg-primary">Reporte</th>
+                <td >{{ orden.reporte }}</td>
+                <th class="bg-primary">Trabajo</th>
+                <td >{{ orden.trabajo }}</td>
+              </tr>
+            <tr>
+  
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="4">Material</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Nombre</th>
+              <td >{{ orden.material.nombre }}</td>
+              <th class="bg-primary">No.Parte</th>
+              <td >{{ orden.material.noParte }}</td>
+            </tr>
+            <tr>
+                <th class="bg-primary">Unidad</th>
+                <td >{{ orden.material.unidad }}</td>
+                <th class="bg-primary">Cantidad</th>
+                <td >{{ orden.material.cantidad }}</td>
+              </tr>
+              <tr>
+                <th class="bg-primary">Descripción</th>
+                <td colspan="3">{{ orden.material.descripcion }}</td>
+              </tr>
+
+            <tr>
+              <th class="bg-primary" style="text-align: center;" colspan="4">Detalles</th>
+            </tr>
+            <tr>
+              <th class="bg-primary">Estatus</th>
+              <td colspan="3" >{{ orden.estatus }}</td>
+            </tr>
+            <tr>
+              <th class="bg-primary">Notas</th>
+              <td colspan="3">{{ orden.notas }}</td>
+            </tr>
+             
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
